@@ -1,2 +1,2 @@
 # Fresh-Blood-Demo
-Demo of learning new knowledge～
+Demo of learning new knowledge
