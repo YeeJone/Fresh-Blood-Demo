@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>Service worker demo</h1>
+    <a href='http://localhost:8080/preFetch.html'>prefetch 对象</a>
+  </body>
+  <script>
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered!', reg))
+      .catch(err => console.log('Boo!', err));
+  
+    setTimeout(() => {
+      const img = new Image();
+      img.src = '/demo1.jpg';
+      document.body.appendChild(img);
+      fetch('http://localhost:8080/preFetch.html').then(res => {
+        console.log(res)
+      })
+    }, 3000);
+  </script>
+</html>
