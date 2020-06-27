@@ -5,10 +5,10 @@ module.exports = {
   mode: 'development',
   target: 'node',
   entry: resolvePath('../server/index.js'),
-  output: {
+  output: [{
     filename: 'index.js',
     path: resolvePath('../dist/server')
-  },
+  }],
   externals: [WebpackNodeExternals()],
   module: {
     rules: [{

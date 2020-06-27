@@ -1,4 +1,5 @@
 import Koa from 'koa'
+import fs from 'fs'
 import regeneratorRuntime from "regenerator-runtime"
 import { renderToString } from 'react-dom/server'
 import Router from 'koa-router'
@@ -25,6 +26,12 @@ router.get('/home', async (ctx, next) => {
   ctx.status = 200
   ctx.body = html
 })
+
+// router.get('/client', async (ctx, next) => {
+//     ctx.status = 200
+//     const client = fs.readdirSync(__dirname, '../dist/client')
+//     ctx.body = html
+// })
 
 app.use(router.routes())
 
