@@ -1,0 +1,14 @@
+{
+  "name": "caniuse-liteddd",
+  "version": "1.0.0",
+  "description": "test caniuse-lite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xuyiqiao <xuyiqiao@zhihu.com>",
+  "license": "ISC",
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001214"
+  }
+}
